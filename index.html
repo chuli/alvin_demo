@@ -1,7 +1,9 @@
+<html>
 ---
 layout: default
 title: My blog
 ---
+<body>
 <h2>{{ page.title }}</h2>
 <p>new page</p>
 <ul>
@@ -9,3 +11,5 @@ title: My blog
 		<li>{{ post.data | data_to_string }} <a href="{{ site.basseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	<% endfor %}
 </ul>
+</body>
+</html>
