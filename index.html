@@ -1,0 +1,11 @@
+---
+layout: default
+title: My blog
+---
+<h2>{{ page.title }}</h2>
+<p>new page</p>
+<ul>
+	{% for post in site.posts %}
+		<li>{{ post.data | data_to_string }} <a href="{{ site.basseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	<% endfor %}
+</ul>
